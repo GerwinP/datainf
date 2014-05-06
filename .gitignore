@@ -213,3 +213,10 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+#############
+## Eigen Ignores
+#############
+
+database.sql
+sqlite3.exe
