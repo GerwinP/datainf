@@ -1,0 +1,10 @@
+INSERT INTO Problem1 (task, result, motivation) VALUES('a', 0, 'want als verschillende voertuigen kunnen dezelfde capaciteit hebben'); 
+INSERT INTO Problem1 (task, result, motivation) VALUES('b', 1, 'want een voertuig heeft een bepaalde capaciteit');
+INSERT INTO Problem1 (task, result, motivation) VALUES('c', 1, 'bij elk adres hoort een factuur, dus ook een pakketje');
+INSERT INTO Problem1 (task, result, motivation) VALUES('d', 1, 'want een pakketje hoort bij een adres, dus ook bij een factuur');
+INSERT INTO Problem1 (task, result, motivation) VALUES('e', 1, 'een pakketje heeft een geldbedrag en een ontvanger');
+INSERT INTO Problem1 (task, result, motivation) VALUES('f', 0, 'een bezorger kan best verschillende voertuigen gebruiken');
+INSERT INTO Problem1 (task, result, motivation) VALUES('g', 1, 'er is 1 bezorger gerechtigd per voertuig');
+INSERT INTO Problem1 (task, result, motivation) VALUES('h', 1, 'elk voertuig heeft een bezorger');
+INSERT INTO Problem1 (task, result, motivation) VALUES('i', 1, 'elk voertuig heeft een capaciteit');
+INSERT INTO Problem1 (task, result, motivation) VALUES('j', 1, '');
