@@ -1,10 +1,7 @@
 SELECT p.pid FROM Person p
 WHERE EXISTS(
-	SELECT * FROM Acts a
+	SELECT * FROM Acts a, Movie m
 	WHERE a.pid = p.pid
-	AND EXISTS (
-		SELECT * FROM Movie m -- the movie exists and a plays in it
-		WHERE m.mid = a.mid
-		AND m.name = 'Back to the Future'
-	)
+	AND m.mid = a.mid
+	AND m.name = 'Back to the Future'
 );
