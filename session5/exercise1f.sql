@@ -1,0 +1,25 @@
+CREATE TABLE IF NOT EXISTS Boek (
+	isbn VARCHAR(13) NOT NULL,
+	titel VARCHAR(100) NOT NULL,
+	auteur VARCHAR(100) NOT NULL,
+	PRIMARY KEY(isbn)
+);
+
+CREATE TABLE IF NOT EXISTS Exemplaar (
+	isbn VARCHAR(13) NOT NULL,
+	volgnummer INT NOT NULL,
+	gewicht INT NOT NULL,
+	kastnummer INT NOT NULL,
+	PRIMARY KEY(volgnummer)
+	FOREIGN KEY(isbn)
+);
+
+CREATE TRIGGER isbn_deleter
+	AFTER DELETE ON Boek
+	FOR EACH ROW
+	BEGIN
+		DELETE FROM Exemplaar
+		WHERE isbn = OLD.isbn;
+	END
+	;
+	

@@ -1,0 +1,5 @@
+INSERT INTO Boek
+VALUES(1234123412341, 'Henkie', 'Josje');
+
+INSERT INTO Boek
+VALUES(1234123412341, 'Pietje', 'Gerwin');
